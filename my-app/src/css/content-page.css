@@ -1,0 +1,11 @@
+.container.content {
+  min-height: calc(100% - 323px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container.content h1 {
+  margin-bottom: 3rem;
+}
+.container.content p {
+  margin: 2rem 0;
+}

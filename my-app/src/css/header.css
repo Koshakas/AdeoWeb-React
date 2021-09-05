@@ -1,0 +1,86 @@
+header {
+  /* height: 190px; */
+  color: var(--main-text);
+  background-color: var(--header-background);
+}
+
+header .container {
+  height: 190px;
+  padding-top: 15px;
+}
+
+header .container #menu-list {
+  text-transform: uppercase;
+}
+
+header .container #header-centered {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header .container h1 {
+  font-size: 2.5rem;
+  min-width: 170px;
+  font-weight: 300;
+  display: inline-block;
+}
+header .container h1 .bold {
+  font-weight: 700;
+}
+
+header .container #header-nav li a {
+  color: var(--main-text);
+}
+
+/* Dropdown */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  padding-bottom: 26px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 10px 2px;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+  top: 35px;
+  left: -20px;
+}
+
+/* Links inside the dropdown */
+header .container #header-nav .dropdown-content a {
+  padding: 7px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+header .container #header-nav .dropdown-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content.arrow-top {
+  display: block;
+}
+.dropdown:hover .dropdown-content.arrow-top:after {
+  content: " ";
+  position: absolute;
+  left: 40px;
+  top: -14px;
+  border-top: none;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid black;
+}

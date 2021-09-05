@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let weather;
+      const overcast = ["overcast", "light-rain", "moderate-rain", "heavy-rain", "fog"];
+      const snow = ["sleet", "light-snow", "moderate-snow", "heavy-snow"];
+      fetch("https://cors.bridged.cc/https://api.meteo.lt/v1/places/kaunas/forecasts/long-term")
+        .then(response => response.json())
+        .then(data => {
+          weather = data.forecastTimestamps[0].conditionCode;
+          console.log("inside", weather);
+
+          // if (snow.includes(weather)) ;
+          // else if (overcast.includes(weather)) return <img src={umbrella} alt="weather"></img>;
+          // else return <img src={sunglasses} alt="weather"></img>;
+        });
+      console.log("outside", weather);
+    </script>
+  </body>
+</html>

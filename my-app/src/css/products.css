@@ -1,0 +1,46 @@
+.container.products {
+  padding: 30px 60px;
+}
+
+.container.products h1::after {
+  display: none;
+}
+
+.products-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.large-unsplash,
+.small-unsplash {
+  width: 48%;
+}
+.small-unsplash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-unsplash #top-banner,
+.small-unsplash #bottom-banner {
+  height: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.small-unsplash #top-banner {
+  background-image: url(../assets/bruno-cervera-unsplash.jpg);
+}
+
+.small-unsplash #bottom-banner {
+  background-image: url(../assets/alexandra-gorn-unsplash.jpg);
+}
+
+.small-unsplash h3 {
+  background-color: rgba(190, 190, 190, 0.6);
+  margin: 0;
+  padding: 15px;
+}

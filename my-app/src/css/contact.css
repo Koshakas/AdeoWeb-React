@@ -1,0 +1,70 @@
+.container.contact {
+  padding: 30px 60px 50px 60px;
+}
+
+.contact h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0px;
+  top: 15px;
+  height: var(--h1-line-height);
+  width: var(--h1-line-width);
+  background-color: var(--secondary-text);
+}
+
+.contact .contact-content {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact .contact-text {
+  padding-right: 4rem;
+}
+.contact .contact-form {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+}
+
+.contact .contact-form label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact .contact-form input {
+  height: 2rem;
+}
+.contact .contact-form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  outline: none;
+  margin: 5px 0 10px 0;
+  padding: 0.5rem;
+  border: 2px solid var(--color-gray);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  border-color: black;
+}
+.contact .contact-form input#message {
+  height: 10rem;
+}
+
+.contact .contact-form button {
+  border-color: var(--header-background);
+  background-color: white;
+  color: var(--header-background);
+  width: 150px;
+}
+.contact .contact-form button:hover {
+  background-color: var(--button-blue);
+  color: white;
+}
