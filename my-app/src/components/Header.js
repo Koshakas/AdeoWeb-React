@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/header.css";
 import logo from "../assets/DEMOSITE.svg";
-import mobile from "./MobileButton";
+// import mobile from "./MobileButton";
 
 function Header() {
   return (

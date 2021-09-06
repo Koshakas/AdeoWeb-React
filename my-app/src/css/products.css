@@ -37,6 +37,7 @@
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 }
 
 .small-unsplash #top-banner {
@@ -44,11 +45,34 @@
 }
 
 .small-unsplash #bottom-banner {
-  background-image: url(../assets/alexandra-gorn-unsplash.jpg);
+  background-image: url(../assets/vandan-patel-unsplash.jpg);
 }
 
 .small-unsplash h3 {
   background-color: rgba(190, 190, 190, 0.6);
   margin: 0;
   padding: 15px;
+}
+
+@media only screen and (max-width: 690px) {
+  .container.products {
+    padding: 30px 20px;
+  }
+  .container.products .products-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container.products .products-box .large-unsplash,
+  .container.products .products-box .small-unsplash {
+    width: 100%;
+    max-width: 468px;
+    margin-bottom: 15px;
+  }
+
+  .container.products .products-box .small-unsplash #top-banner,
+  .container.products .products-box .small-unsplash #bottom-banner {
+    width: 100%;
+    padding-top: 67%;
+    margin-bottom: 15px;
+  }
 }
