@@ -15,6 +15,14 @@
 .small-unsplash {
   width: 48%;
 }
+.large-unsplash div {
+  height: 412.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  opacity: 0.2;
+}
 .small-unsplash {
   display: flex;
   flex-direction: column;

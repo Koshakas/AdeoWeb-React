@@ -18,11 +18,6 @@ import Works from "./components/Works";
 
 function App() {
   return (
-    // <div className="App">
-    //   <h1>This is my app!!!</h1>
-    //   <p>The sky is blue and the grass is green.</p>
-    // </div>
-
     <BrowserRouter>
       <Header />
       <Switch>

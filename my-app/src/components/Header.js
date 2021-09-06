@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/header.css";
 import logo from "../assets/DEMOSITE.svg";
+import mobile from "./MobileButton";
 
 function Header() {
   return (
@@ -9,6 +10,18 @@ function Header() {
       <div className="container">
         <div id="menu-list">Menu | Some text | Another item | One more | And last one</div>
         <div id="header-centered">
+          <div id="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          {document.querySelector("#hamburger-button") &&
+            document.querySelector("#hamburger-button").addEventListener("click", e => {
+              e.stopPropagation();
+              e.target.classList.toggle("open");
+              console.log(e.target);
+            })}
           <img src={logo} alt="DemoSite Logo"></img>
           <nav id="header-nav">
             <ul>

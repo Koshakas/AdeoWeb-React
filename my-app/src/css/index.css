@@ -2,6 +2,7 @@
   --main-text: white;
   --secondary-text: black;
   --header-background: rgb(68, 140, 203);
+  --header-bg-mobile: rgb(117, 169, 217);
   --color-gray: rgb(215, 215, 215);
   --button-blue: rgb(59, 145, 194);
   --h1-line-height: 6px;
@@ -108,4 +109,10 @@ nav li a {
   padding: 0 30px;
   margin: auto;
   /* outline: 1px solid red; */
+}
+
+@media only screen and (max-width: 690px) {
+  .container {
+    min-width: 350px;
+  }
 }

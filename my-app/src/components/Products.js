@@ -5,6 +5,7 @@ import forecast from "./Forecast";
 function Products() {
   const [weather, setWeather] = React.useState();
   forecast().then(setWeather);
+
   // forecast().then(w => setWeather(w));
 
   return (
@@ -13,7 +14,7 @@ function Products() {
       <h3>Offers today</h3>
       <div className="products-box">
         <div className="large-unsplash">
-          {weather && <img src={weather}></img>}
+          {weather && <img src={weather} alt="Our offers"></img>}
           {!weather && <div>Loading...</div>}
         </div>
         <div className="small-unsplash">

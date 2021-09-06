@@ -20,8 +20,8 @@ function Footer() {
                 <Link to="/service">Service</Link>
               </li>
               <li>
-                <Link to="/about-me">About me</Link>
-              </li>
+                <Link to="/about-me">About&nbsp;me</Link>
+              </li>{" "}
               <li>
                 <Link to="/works">Works</Link>
               </li>
