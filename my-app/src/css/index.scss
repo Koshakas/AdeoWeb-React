@@ -1,11 +1,4 @@
-$main-text: #fff;
-$secondary-text: #000;
-$header-background: rgb(68, 140, 203);
-$header-bg-mobile: rgb(117, 169, 217);
-$color-gray: rgb(215, 215, 215);
-$button-blue: rgb(59, 145, 194);
-$h1-line-height: 6px;
-$h1-line-width: 50px;
+@import "theme";
 
 * {
   margin: 0;

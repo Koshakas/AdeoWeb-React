@@ -34,11 +34,11 @@ function Header() {
               <li>
                 <Link to="/service">Service</Link>
               </li>
-              <li class="dropdown">
+              <li className="dropdown">
                 <Link to="/works" className="dropbtn">
                   Works
                 </Link>
-                <div class="dropdown-content arrow-top">
+                <div className="dropdown-content arrow-top">
                   <Link to="/">All</Link>
                   <Link to="/">Graphic</Link>
                   <Link to="/">Design</Link>

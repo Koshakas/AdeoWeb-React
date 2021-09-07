@@ -4,7 +4,9 @@ import forecast from "./Forecast";
 
 function Products() {
   const [weather, setWeather] = React.useState();
-  forecast().then(setWeather);
+  React.useEffect(() => {
+    forecast().then(setWeather);
+  }, []);
 
   // forecast().then(w => setWeather(w));
 
