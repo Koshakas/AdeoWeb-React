@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/products.css";
+import "../css/products.scss";
 import forecast from "./Forecast";
 
 function Products() {

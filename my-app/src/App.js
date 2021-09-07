@@ -1,4 +1,4 @@
-import "./css/content-page.css";
+import "./css/content-page.scss";
 import React from "react";
 // import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";

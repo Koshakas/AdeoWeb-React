@@ -1,4 +1,4 @@
-@use 'index';
+@import "index";
 
 .container.contact {
   padding: 30px 60px 50px 60px;
@@ -11,9 +11,9 @@
     position: relative;
     left: 0px;
     top: 15px;
-    height: index.$h1-line-height;
-    width: index.$h1-line-width;
-    background-color: index.$secondary-text;
+    height: $h1-line-height;
+    width: $h1-line-width;
+    background-color: $secondary-text;
   }
 
   .contact-content {
@@ -50,7 +50,7 @@
       outline: none;
       margin: 5px 0 10px 0;
       padding: 0.5rem;
-      border: 2px solid index.$color-gray;
+      border: 2px solid $color-gray;
       font-family: inherit;
       font-size: 1rem;
     }
@@ -65,13 +65,13 @@
     }
 
     button {
-      border-color: index.$header-background;
+      border-color: $header-background;
       background-color: white;
-      color: index.$header-background;
+      color: $header-background;
       width: 150px;
 
       &:hover {
-        background-color: index.$button-blue;
+        background-color: $button-blue;
         color: white;
       }
     }

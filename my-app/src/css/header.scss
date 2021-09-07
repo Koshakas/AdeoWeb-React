@@ -1,8 +1,8 @@
-@use 'index';
+@import "index";
 
 header {
-  color: index.$main-text;
-  background-color: index.$header-background;
+  color: $main-text;
+  background-color: $header-background;
 
   .container {
     height: 190px;
@@ -25,7 +25,7 @@ header {
     }
 
     #header-nav li a {
-      color: index.$main-text;
+      color: $main-text;
     }
   }
 }
@@ -107,7 +107,7 @@ header .container #header-nav .dropdown-content a {
 
       li {
         display: block;
-        background-color: index.$header-bg-mobile;
+        background-color: $header-bg-mobile;
         padding: 5px 0;
 
         a {
@@ -115,7 +115,7 @@ header .container #header-nav .dropdown-content a {
           padding: 10px 5px;
 
           &:hover {
-            background-color: index.$header-background;
+            background-color: $header-background;
           }
         }
       }

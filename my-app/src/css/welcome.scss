@@ -1,4 +1,4 @@
-@use 'index';
+@import "index";
 
 .container.welcome {
   display: flex;
@@ -12,35 +12,35 @@
   height: 100%;
   width: 30%;
   min-width: min-content;
-  background-color: index.$header-background;
+  background-color: $header-background;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   h1 {
-    color: index.$main-text;
+    color: $main-text;
     margin-bottom: 30px;
 
     &::after {
-      background-color: index.$main-text;
+      background-color: $main-text;
     }
   }
 
   p {
-    color: index.$main-text;
+    color: $main-text;
   }
 
   button {
-    color: index.$main-text;
-    background-color: index.$button-blue;
-    border-color: index.$main-text;
+    color: $main-text;
+    background-color: $button-blue;
+    border-color: $main-text;
     align-self: flex-end;
     margin-top: 2rem;
 
     &:hover {
       background-color: white;
-      color: index.$button-blue;
+      color: $button-blue;
       cursor: pointer;
     }
   }
@@ -50,7 +50,7 @@
   height: 100%;
   width: 65%;
   min-width: auto;
-  background-color: index.$color-gray;
+  background-color: $color-gray;
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -65,7 +65,7 @@
 
   h2,
   p {
-    color: index.$secondary-text;
+    color: $secondary-text;
   }
 }
 

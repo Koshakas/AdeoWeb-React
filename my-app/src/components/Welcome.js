@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/welcome.css";
+import "../css/welcome.scss";
 import banner from "../assets/alexandra-gorn-unsplash.jpg";
 
 function Welcome() {

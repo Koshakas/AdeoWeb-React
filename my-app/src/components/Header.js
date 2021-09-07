@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/header.css";
+import "../css/header.scss";
 import logo from "../assets/DEMOSITE.svg";
 // import mobile from "./MobileButton";
 

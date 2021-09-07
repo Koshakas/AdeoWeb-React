@@ -1,5 +1,5 @@
-$main-text: white;
-$secondary-text: black;
+$main-text: #fff;
+$secondary-text: #000;
 $header-background: rgb(68, 140, 203);
 $header-bg-mobile: rgb(117, 169, 217);
 $color-gray: rgb(215, 215, 215);
@@ -42,9 +42,9 @@ h1 {
     position: relative;
     left: 0px;
     top: 15px;
-    height: var(--h1-line-height);
-    width: var(--h1-line-width);
-    background-color: var(--secondary-text);
+    height: $h1-line-height;
+    width: $h1-line-width;
+    background-color: $secondary-text;
   }
 }
 
@@ -78,12 +78,12 @@ button {
 
   &.back-btn {
     float: right;
-    border-color: var(--header-background);
+    border-color: $header-background;
     background-color: white;
-    color: var(--header-background);
+    color: $header-background;
 
     &:hover {
-      background-color: var(--button-blue);
+      background-color: $button-blue;
       color: white;
     }
   }
@@ -96,7 +96,7 @@ nav {
     display: inline;
 
     a {
-      color: var(--main-text);
+      color: $main-text;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
