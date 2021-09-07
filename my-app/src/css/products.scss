@@ -1,0 +1,91 @@
+$banner1: url(../assets/bruno-cervera-unsplash.jpg);
+$banner2: url(../assets/vandan-patel-unsplash.jpg);
+$h3-bg: rgba(190, 190, 190, 0.6);
+
+.container.products {
+  padding: 30px 60px;
+
+  h1::after {
+    display: none;
+  }
+}
+
+.products-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-l,
+.banner-s {
+  width: 48%;
+}
+
+.banner-l div {
+  height: 412.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  opacity: 0.2;
+}
+
+.banner-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #top-banner,
+  #bottom-banner {
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  #top-banner {
+    background-image: $banner1;
+  }
+
+  #bottom-banner {
+    background-image: $banner2;
+  }
+
+  h3 {
+    background-color: $h3-bg;
+    margin: 0;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container.products {
+    padding: 30px 20px;
+
+    .products-box {
+      flex-direction: column;
+      align-items: center;
+
+      .banner-l {
+        width: 100%;
+        max-width: 468px;
+        margin-bottom: 15px;
+      }
+
+      .banner-s {
+        width: 100%;
+        max-width: 468px;
+        margin-bottom: 15px;
+
+        #top-banner,
+        #bottom-banner {
+          width: 100%;
+          padding-top: 67%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

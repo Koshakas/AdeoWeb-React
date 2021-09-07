@@ -1,0 +1,94 @@
+@use 'index';
+
+.container.welcome {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  height: 450px;
+}
+
+#narrow-box {
+  height: 100%;
+  width: 30%;
+  min-width: min-content;
+  background-color: index.$header-background;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    color: index.$main-text;
+    margin-bottom: 30px;
+
+    &::after {
+      background-color: index.$main-text;
+    }
+  }
+
+  p {
+    color: index.$main-text;
+  }
+
+  button {
+    color: index.$main-text;
+    background-color: index.$button-blue;
+    border-color: index.$main-text;
+    align-self: flex-end;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: white;
+      color: index.$button-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+#wide-box {
+  height: 100%;
+  width: 65%;
+  min-width: auto;
+  background-color: index.$color-gray;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  img {
+    min-height: 150px;
+    min-width: 540px;
+  }
+
+  .content {
+    padding: 10px 40px;
+  }
+
+  h2,
+  p {
+    color: index.$secondary-text;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container.welcome {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    height: auto;
+
+    #narrow-box {
+      height: auto;
+      width: 100%;
+      min-width: min-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #wide-box {
+      width: auto;
+      height: auto;
+      margin-top: 1rem;
+    }
+  }
+}

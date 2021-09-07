@@ -1,7 +1,6 @@
 .container.products {
   padding: 30px 60px;
 }
-
 .container.products h1::after {
   display: none;
 }
@@ -11,11 +10,12 @@
   justify-content: space-between;
 }
 
-.large-unsplash,
-.small-unsplash {
+.banner-l,
+.banner-s {
   width: 48%;
 }
-.large-unsplash div {
+
+.banner-l div {
   height: 412.8px;
   display: flex;
   justify-content: center;
@@ -23,14 +23,14 @@
   font-size: 5rem;
   opacity: 0.2;
 }
-.small-unsplash {
+
+.banner-s {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.small-unsplash #top-banner,
-.small-unsplash #bottom-banner {
+.banner-s #top-banner,
+.banner-s #bottom-banner {
   height: 47%;
   display: flex;
   flex-direction: column;
@@ -39,16 +39,13 @@
   background-size: cover;
   background-position: top center;
 }
-
-.small-unsplash #top-banner {
+.banner-s #top-banner {
   background-image: url(../assets/bruno-cervera-unsplash.jpg);
 }
-
-.small-unsplash #bottom-banner {
+.banner-s #bottom-banner {
   background-image: url(../assets/vandan-patel-unsplash.jpg);
 }
-
-.small-unsplash h3 {
+.banner-s h3 {
   background-color: rgba(190, 190, 190, 0.6);
   margin: 0;
   padding: 15px;
@@ -62,17 +59,20 @@
     flex-direction: column;
     align-items: center;
   }
-  .container.products .products-box .large-unsplash,
-  .container.products .products-box .small-unsplash {
+  .container.products .products-box .banner-l {
     width: 100%;
     max-width: 468px;
     margin-bottom: 15px;
   }
-
-  .container.products .products-box .small-unsplash #top-banner,
-  .container.products .products-box .small-unsplash #bottom-banner {
+  .container.products .products-box .banner-s {
+    width: 100%;
+    max-width: 468px;
+    margin-bottom: 15px;
+  }
+  .container.products .products-box .banner-s #top-banner,
+.container.products .products-box .banner-s #bottom-banner {
     width: 100%;
     padding-top: 67%;
     margin-bottom: 15px;
   }
-}
+}/*# sourceMappingURL=products.css.map */

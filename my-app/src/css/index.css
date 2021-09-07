@@ -1,29 +1,20 @@
-:root {
-  --main-text: white;
-  --secondary-text: black;
-  --header-background: rgb(68, 140, 203);
-  --header-bg-mobile: rgb(117, 169, 217);
-  --color-gray: rgb(215, 215, 215);
-  --button-blue: rgb(59, 145, 194);
-  --h1-line-height: 6px;
-  --h1-line-width: 50px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
-  font-size: 87.5%; /* font-size 1em = 14px on default browser settings */
+  font-size: 87.5%;
+  /* font-size 1em = 14px on default browser settings */
   height: 100vh;
 }
 
 body {
-  /* background-color: aquamarine; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
 }
+
 #root {
   height: 100vh;
 }
@@ -37,7 +28,6 @@ h3 {
 h1 {
   font-size: 2.5rem;
 }
-
 h1::after {
   content: "";
   display: block;
@@ -53,18 +43,22 @@ h2 {
   font-size: 1.8rem;
   margin: 0.6rem 0;
 }
+
 h3 {
   font-size: 1.2rem;
   margin: 0.8rem 0;
 }
+
 p {
   margin: 0.7rem 0;
   font-size: 1.1rem;
 }
+
 img {
   max-width: 100%;
   display: block;
 }
+
 button {
   padding: 10px 25px;
   border-width: 2px;
@@ -73,14 +67,12 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
-
 button.back-btn {
   float: right;
   border-color: var(--header-background);
   background-color: white;
   color: var(--header-background);
 }
-
 button.back-btn:hover {
   background-color: var(--button-blue);
   color: white;
@@ -89,7 +81,6 @@ button.back-btn:hover {
 nav {
   display: inline-block;
 }
-
 nav li {
   display: inline;
 }
@@ -108,15 +99,15 @@ nav li a {
   min-width: 690px;
   padding: 0 30px;
   margin: auto;
-  /* outline: 1px solid red; */
 }
 
 @media only screen and (max-width: 690px) {
   html {
     font-size: 100%;
   }
+
   .container {
     min-width: 350px;
     padding: 0 20px;
   }
-}
+}/*# sourceMappingURL=index.css.map */

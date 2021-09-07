@@ -13,11 +13,11 @@ function Products() {
       <h1> Products</h1>
       <h3>Offers today</h3>
       <div className="products-box">
-        <div className="large-unsplash">
+        <div className="banner-l">
           {weather && <img src={weather} alt="Our offers"></img>}
           {!weather && <div>Loading...</div>}
         </div>
-        <div className="small-unsplash">
+        <div className="banner-s">
           <div id="top-banner">
             <h3>The best coffee</h3>
           </div>

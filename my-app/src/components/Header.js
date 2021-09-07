@@ -5,23 +5,26 @@ import logo from "../assets/DEMOSITE.svg";
 // import mobile from "./MobileButton";
 
 function Header() {
+  setTimeout(function () {
+    document.querySelector("#mobile-nav").addEventListener("click", e => {
+      e.target.classList.toggle("open");
+      console.log(e.target);
+      e.stopPropagation();
+    });
+  }, 200);
+
   return (
     <header>
       <div className="container">
         <div id="menu-list">Menu | Some text | Another item | One more | And last one</div>
         <div id="header-centered">
-          <div id="hamburger-button">
+          <div id="mobile-nav">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          {document.querySelector("#hamburger-button") &&
-            document.querySelector("#hamburger-button").addEventListener("click", e => {
-              e.stopPropagation();
-              e.target.classList.toggle("open");
-              console.log(e.target);
-            })}
+          {}
           <img src={logo} alt="DemoSite Logo"></img>
           <nav id="header-nav">
             <ul>

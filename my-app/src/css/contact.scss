@@ -1,0 +1,106 @@
+@use 'index';
+
+.container.contact {
+  padding: 30px 60px 50px 60px;
+}
+
+.contact {
+  h1::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 15px;
+    height: index.$h1-line-height;
+    width: index.$h1-line-width;
+    background-color: index.$secondary-text;
+  }
+
+  .contact-content {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .contact-text {
+    padding-right: 4rem;
+  }
+
+  .contact-form {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+
+    label {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    input {
+      height: 2rem;
+    }
+
+    textarea {
+      height: 10rem;
+      resize: none;
+    }
+
+    input,
+    textarea {
+      outline: none;
+      margin: 5px 0 10px 0;
+      padding: 0.5rem;
+      border: 2px solid index.$color-gray;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: black;
+    }
+
+    input#message {
+      height: 10rem;
+    }
+
+    button {
+      border-color: index.$header-background;
+      background-color: white;
+      color: index.$header-background;
+      width: 150px;
+
+      &:hover {
+        background-color: index.$button-blue;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .container.contact {
+    padding: 20px;
+  }
+
+  .contact {
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+
+    .contact-form {
+      width: auto;
+
+      button {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      input {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
