@@ -2,10 +2,10 @@ import React from "react";
 import Dummy from "./DummyText";
 import Back from "./BackButton";
 
-function ContactPage() {
+function ContactPage(props) {
   return (
     <div className="container content">
-      <Back />
+      <Back onBack={props.onBack} />
       <h1>Contact</h1>
       <Dummy />
     </div>

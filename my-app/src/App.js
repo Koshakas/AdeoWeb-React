@@ -1,7 +1,7 @@
 import "./css/content-page.scss";
 import React from "react";
 // import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 // My components
 import Header from "./components/Header";
@@ -17,30 +17,33 @@ import Service from "./components/Service";
 import Works from "./components/Works";
 
 function App() {
+  const [pageHistory, setPageHistory] = React.useState(["home"]);
+  const page = pageHistory[pageHistory.length - 1];
+
+  const setPage = p => {
+    if (p !== page) setPageHistory([...pageHistory, p]);
+  };
+  const onBack = () => {
+    if (pageHistory.length > 1) setPageHistory(pageHistory.slice(0, -1));
+  };
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Switch>
-        <Route path="/" exact>
+    <>
+      <Header onPageChange={setPage} />
+      {/* <pre>{JSON.stringify(pageHistory, undefined, "  ")}</pre> */}
+      {page === "home" && (
+        <>
           <Welcome />
           <Products />
           <Contact />
-        </Route>
-        <Route path="/about-me">
-          <About />
-        </Route>
-        <Route path="/contact-me">
-          <ContactPage />
-        </Route>
-        <Route path="/service">
-          <Service />
-        </Route>
-        <Route path="/works">
-          <Works />
-        </Route>
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+        </>
+      )}
+      {page === "about-me" && <About onBack={onBack} />}
+      {page === "contact-me" && <ContactPage onBack={onBack} />}
+      {page === "service" && <Service onBack={onBack} />}
+      {page === "works" && <Works onBack={onBack} />}
+      <Footer onPageChange={setPage} />
+    </>
   );
 }
 

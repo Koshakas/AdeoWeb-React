@@ -4,21 +4,14 @@ import "../css/header.scss";
 import logo from "../assets/DEMOSITE.svg";
 // import mobile from "./MobileButton";
 
-function Header() {
-  setTimeout(function () {
-    document.querySelector("#mobile-nav").addEventListener("click", e => {
-      e.target.classList.toggle("open");
-      console.log(e.target);
-      e.stopPropagation();
-    });
-  }, 200);
-
+function Header(props) {
+  const [open, setOpen] = React.useState(false);
   return (
     <header>
       <div className="container">
         <div id="menu-list">Menu | Some text | Another item | One more | And last one</div>
         <div id="header-centered">
-          <div id="mobile-nav">
+          <div onClick={() => setOpen(!open)} className={open ? "open" : ""} id="mobile-nav">
             <span></span>
             <span></span>
             <span></span>
@@ -29,28 +22,28 @@ function Header() {
           <nav id="header-nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <a onClick={() => props.onPageChange("home")}>Home</a>
               </li>
               <li>
-                <Link to="/service">Service</Link>
+                <a onClick={() => props.onPageChange("service")}>Service</a>
               </li>
               <li className="dropdown">
-                <Link to="/works" className="dropbtn">
+                <a onClick={() => props.onPageChange("works")} className="dropbtn">
                   Works
-                </Link>
+                </a>
                 <div className="dropdown-content arrow-top">
-                  <Link to="/">All</Link>
-                  <Link to="/">Graphic</Link>
-                  <Link to="/">Design</Link>
-                  <Link to="/">Logo</Link>
-                  <Link to="/">Website</Link>
+                  <a>All</a>
+                  <a>Graphic</a>
+                  <a>Design</a>
+                  <a>Logo</a>
+                  <a>Website</a>
                 </div>
               </li>
               <li>
-                <Link to="/about-me">About me</Link>
+                <a onClick={() => props.onPageChange("about-me")}>About me</a>
               </li>
               <li>
-                <Link to="/contact-me">Contact</Link>
+                <a onClick={() => props.onPageChange("contact-me")}>Contact</a>
               </li>
             </ul>
           </nav>

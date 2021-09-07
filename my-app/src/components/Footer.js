@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/footer.scss";
 
-function Footer() {
+function Footer(props) {
   return (
     <footer>
       <div className="container footer">
@@ -14,19 +14,28 @@ function Footer() {
           <nav id="footer-menu">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <a onClick={() => props.onPageChange("home")}>Home</a>
               </li>
               <li>
-                <Link to="/service">Service</Link>
+                <a onClick={() => props.onPageChange("service")}>Service</a>
+              </li>
+              <li className="dropdown">
+                <a onClick={() => props.onPageChange("works")} className="dropbtn">
+                  Works
+                </a>
+                <div className="dropdown-content arrow-top">
+                  <a>All</a>
+                  <a>Graphic</a>
+                  <a>Design</a>
+                  <a>Logo</a>
+                  <a>Website</a>
+                </div>
               </li>
               <li>
-                <Link to="/about-me">About&nbsp;me</Link>
-              </li>{" "}
-              <li>
-                <Link to="/works">Works</Link>
+                <a onClick={() => props.onPageChange("about-me")}>About me</a>
               </li>
               <li>
-                <Link to="/contact-me">Contact</Link>
+                <a onClick={() => props.onPageChange("contact-me")}>Contact</a>
               </li>
             </ul>
           </nav>
