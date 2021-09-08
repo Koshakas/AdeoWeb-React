@@ -24,8 +24,17 @@ header {
       align-items: baseline;
     }
 
-    #header-nav li a {
-      color: $main-text;
+    #header-nav {
+      ul {
+        li {
+          .nav-btn {
+            @include nav-btn;
+            &:hover {
+              background-color: $header-bg-mobile;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -44,7 +53,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  padding: 10px 2px;
+  padding: 12px 4px;
   background-color: black;
   min-width: 160px;
   z-index: 1;
@@ -55,10 +64,12 @@ header {
 
 /* Links inside the dropdown */
 
-header .container #header-nav .dropdown-content a {
-  padding: 7px 6px;
-  text-decoration: none;
+header .container #header-nav .dropdown-content .subnav-btn {
+  @include nav-btn;
   display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 14px;
 
   &:hover {
     background-color: white;
@@ -108,10 +119,11 @@ header .container #header-nav .dropdown-content a {
       li {
         display: block;
         background-color: $header-bg-mobile;
-        padding: 5px 0;
+        padding: 5px;
 
-        a {
-          display: block;
+        button.nav-btn {
+          // display: block;
+          width: 100%;
           padding: 10px 5px;
 
           &:hover {

@@ -6,3 +6,48 @@ $color-gray: rgb(215, 215, 215);
 $button-blue: rgb(59, 145, 194);
 $h1-line-height: 6px;
 $h1-line-width: 50px;
+
+@mixin rect-btn {
+  padding: 10px 25px;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin blue-btn {
+  color: $main-text;
+  background-color: $button-blue;
+  border-color: $main-text;
+  // align-self: flex-end;
+  // margin-top: 2rem;
+  &:hover {
+    background-color: white;
+    color: $button-blue;
+  }
+}
+
+@mixin white-btn {
+  border-color: $header-background;
+  background-color: white;
+  color: $header-background;
+  // width: 150px;
+  &:hover {
+    background-color: $button-blue;
+    color: white;
+  }
+}
+
+@mixin nav-btn {
+  color: $main-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}

@@ -1,3 +1,5 @@
+@import "index";
+
 .container.content {
   min-height: calc(100% - 323px);
   padding-top: 20px;
@@ -9,5 +11,10 @@
 
   p {
     margin: 2rem 0;
+  }
+  .back-btn {
+    @include rect-btn;
+    @include white-btn;
+    float: right;
   }
 }

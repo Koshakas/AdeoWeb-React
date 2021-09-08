@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../css/header.scss";
 import logo from "../assets/DEMOSITE.svg";
 // import mobile from "./MobileButton";
@@ -22,28 +22,36 @@ function Header(props) {
           <nav id="header-nav">
             <ul>
               <li>
-                <a onClick={() => props.onPageChange("home")}>Home</a>
+                <button className="nav-btn" onClick={() => props.onPageChange("home")}>
+                  Home
+                </button>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("service")}>Service</a>
+                <button className="nav-btn" onClick={() => props.onPageChange("service")}>
+                  Service
+                </button>
               </li>
               <li className="dropdown">
-                <a onClick={() => props.onPageChange("works")} className="dropbtn">
+                <button className="nav-btn dropbtn" onClick={() => props.onPageChange("works")}>
                   Works
-                </a>
+                </button>
                 <div className="dropdown-content arrow-top">
-                  <a>All</a>
-                  <a>Graphic</a>
-                  <a>Design</a>
-                  <a>Logo</a>
-                  <a>Website</a>
+                  <button className="subnav-btn">All</button>
+                  <button className="subnav-btn">Graphic</button>
+                  <button className="subnav-btn">Design</button>
+                  <button className="subnav-btn">Logo</button>
+                  <button className="subnav-btn">Website</button>
                 </div>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("about-me")}>About me</a>
+                <button className="nav-btn" onClick={() => props.onPageChange("about-me")}>
+                  About me
+                </button>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("contact-me")}>Contact</a>
+                <button className="nav-btn" onClick={() => props.onPageChange("contact-me")}>
+                  Contact
+                </button>
               </li>
             </ul>
           </nav>

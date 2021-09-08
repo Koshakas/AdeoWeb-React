@@ -1,7 +1,7 @@
 import "./css/content-page.scss";
 import React from "react";
 // import ReactDOM from "react-dom";
-import { Switch, Route } from "react-router-dom";
+// import { Switch, Route } from "react-router-dom";
 
 // My components
 import Header from "./components/Header";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../css/footer.scss";
 
 function Footer(props) {
@@ -14,28 +14,19 @@ function Footer(props) {
           <nav id="footer-menu">
             <ul>
               <li>
-                <a onClick={() => props.onPageChange("home")}>Home</a>
+                <button onClick={() => props.onPageChange("home")}>Home</button>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("service")}>Service</a>
-              </li>
-              <li className="dropdown">
-                <a onClick={() => props.onPageChange("works")} className="dropbtn">
-                  Works
-                </a>
-                <div className="dropdown-content arrow-top">
-                  <a>All</a>
-                  <a>Graphic</a>
-                  <a>Design</a>
-                  <a>Logo</a>
-                  <a>Website</a>
-                </div>
+                <button onClick={() => props.onPageChange("service")}>Service</button>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("about-me")}>About me</a>
+                <button onClick={() => props.onPageChange("works")}>Works</button>
               </li>
               <li>
-                <a onClick={() => props.onPageChange("contact-me")}>Contact</a>
+                <button onClick={() => props.onPageChange("about-me")}>About me</button>
+              </li>
+              <li>
+                <button onClick={() => props.onPageChange("contact-me")}>Contact</button>
               </li>
             </ul>
           </nav>

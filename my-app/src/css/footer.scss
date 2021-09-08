@@ -26,6 +26,13 @@ footer {
   #footer-menu {
     margin-bottom: 20px;
   }
+  ul {
+    li {
+      button {
+        @include nav-btn;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 690px) {

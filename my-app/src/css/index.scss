@@ -61,42 +61,11 @@ img {
   display: block;
 }
 
-button {
-  padding: 10px 25px;
-  border-width: 2px;
-  border-style: solid;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  &.back-btn {
-    float: right;
-    border-color: $header-background;
-    background-color: white;
-    color: $header-background;
-
-    &:hover {
-      background-color: $button-blue;
-      color: white;
-    }
-  }
-}
-
 nav {
   display: inline-block;
 
   li {
     display: inline;
-
-    a {
-      color: $main-text;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 0 8px;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
   }
 }
 
