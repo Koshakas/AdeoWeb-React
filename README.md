@@ -11,7 +11,7 @@ https://koshakas.github.io/AdeoWeb-React/index.html
 
 #### Technologijos
 
-Puslapis sukurtas su 'create-react-app', papildomai panaudojau 'node-sass' ir 'gh-pages'.
+Puslapis sukurtas panaudojant 'create-react-app', 'node-sass' ir 'gh-pages'.
 
 #### Dizainas
 
@@ -23,12 +23,10 @@ Nepanaudojau 'mobile-first approach', kadangi pasiskaičiau apie tai kai jau buv
 
 Puse projekto parašiau viename kommite, kai gavau pastabą iš draugo programuotojo, toliau stengiausi dažniau komitinti, po kiekvieno rimtesnio kodo papildymo.
 
+#### React Router
+
+Kadangi navigacija padaryta per useState (dėl reikalavimų navigacijos istorijai ir BACK mygtukui), React Router liko nepanaudotas, tačiau implementacija išsaugota faile src/AppRouter.js - jei prireiktų.
+
 #### Dėl Redux
 
 Projekte nenaudojau Redux, kadangi dar pakankamai neišstudijavau technologijos. Puslapio navigaciją padariau su useState.
-
-#### React Router
-
-Kadangi navigacija padaryte per useState, React Router taip pat neprireikė, tačiau implementacija išsaugota faile src/AppRouter.js
-
-  
