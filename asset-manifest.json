@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/css/main.b3de4dfe.chunk.css",
-    "main.js": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/main.42ed7bd9.chunk.js",
-    "main.js.map": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/main.42ed7bd9.chunk.js.map",
-    "runtime-main.js": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/runtime-main.5231f919.js",
-    "runtime-main.js.map": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/runtime-main.5231f919.js.map",
-    "static/js/2.32aa11d0.chunk.js": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/2.32aa11d0.chunk.js",
-    "static/js/2.32aa11d0.chunk.js.map": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/2.32aa11d0.chunk.js.map",
-    "static/js/3.45871e5f.chunk.js": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/3.45871e5f.chunk.js",
-    "static/js/3.45871e5f.chunk.js.map": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/3.45871e5f.chunk.js.map",
-    "index.html": "/Koshakas/AdeoWeb-React/tree/main/my-app/index.html",
-    "static/css/main.b3de4dfe.chunk.css.map": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/css/main.b3de4dfe.chunk.css.map",
-    "static/js/2.32aa11d0.chunk.js.LICENSE.txt": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/js/2.32aa11d0.chunk.js.LICENSE.txt",
-    "static/media/DEMOSITE.8363892b.svg": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/DEMOSITE.8363892b.svg",
-    "static/media/alexandra-gorn-unsplash.0f9eb904.jpg": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/alexandra-gorn-unsplash.0f9eb904.jpg",
-    "static/media/products.scss": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/vandan-patel-unsplash.575c78bc.jpg",
-    "static/media/snowflake.4f0765e0.svg": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/snowflake.4f0765e0.svg",
-    "static/media/sunglasses.3e12923e.svg": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/sunglasses.3e12923e.svg",
-    "static/media/umbrella.912f9ad4.svg": "/Koshakas/AdeoWeb-React/tree/main/my-app/static/media/umbrella.912f9ad4.svg"
+    "main.css": "/Koshakas/AdeoWeb-React/my-app/static/css/main.eef09052.chunk.css",
+    "main.js": "/Koshakas/AdeoWeb-React/my-app/static/js/main.42ed7bd9.chunk.js",
+    "main.js.map": "/Koshakas/AdeoWeb-React/my-app/static/js/main.42ed7bd9.chunk.js.map",
+    "runtime-main.js": "/Koshakas/AdeoWeb-React/my-app/static/js/runtime-main.61f3c03e.js",
+    "runtime-main.js.map": "/Koshakas/AdeoWeb-React/my-app/static/js/runtime-main.61f3c03e.js.map",
+    "static/js/2.32aa11d0.chunk.js": "/Koshakas/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js",
+    "static/js/2.32aa11d0.chunk.js.map": "/Koshakas/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js.map",
+    "static/js/3.45871e5f.chunk.js": "/Koshakas/AdeoWeb-React/my-app/static/js/3.45871e5f.chunk.js",
+    "static/js/3.45871e5f.chunk.js.map": "/Koshakas/AdeoWeb-React/my-app/static/js/3.45871e5f.chunk.js.map",
+    "index.html": "/Koshakas/AdeoWeb-React/my-app/index.html",
+    "static/css/main.eef09052.chunk.css.map": "/Koshakas/AdeoWeb-React/my-app/static/css/main.eef09052.chunk.css.map",
+    "static/js/2.32aa11d0.chunk.js.LICENSE.txt": "/Koshakas/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js.LICENSE.txt",
+    "static/media/DEMOSITE.8363892b.svg": "/Koshakas/AdeoWeb-React/my-app/static/media/DEMOSITE.8363892b.svg",
+    "static/media/alexandra-gorn-unsplash.0f9eb904.jpg": "/Koshakas/AdeoWeb-React/my-app/static/media/alexandra-gorn-unsplash.0f9eb904.jpg",
+    "static/media/products.scss": "/Koshakas/AdeoWeb-React/my-app/static/media/vandan-patel-unsplash.575c78bc.jpg",
+    "static/media/snowflake.4f0765e0.svg": "/Koshakas/AdeoWeb-React/my-app/static/media/snowflake.4f0765e0.svg",
+    "static/media/sunglasses.3e12923e.svg": "/Koshakas/AdeoWeb-React/my-app/static/media/sunglasses.3e12923e.svg",
+    "static/media/umbrella.912f9ad4.svg": "/Koshakas/AdeoWeb-React/my-app/static/media/umbrella.912f9ad4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5231f919.js",
+    "static/js/runtime-main.61f3c03e.js",
     "static/js/2.32aa11d0.chunk.js",
-    "static/css/main.b3de4dfe.chunk.css",
+    "static/css/main.eef09052.chunk.css",
     "static/js/main.42ed7bd9.chunk.js"
   ]
 }
