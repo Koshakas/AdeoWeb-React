@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/AdeoWeb-React/my-app/static/css/main.38b052a3.chunk.css",
-    "main.js": "/AdeoWeb-React/my-app/static/js/main.42ed7bd9.chunk.js",
-    "main.js.map": "/AdeoWeb-React/my-app/static/js/main.42ed7bd9.chunk.js.map",
-    "runtime-main.js": "/AdeoWeb-React/my-app/static/js/runtime-main.bee13da1.js",
-    "runtime-main.js.map": "/AdeoWeb-React/my-app/static/js/runtime-main.bee13da1.js.map",
-    "static/js/2.32aa11d0.chunk.js": "/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js",
-    "static/js/2.32aa11d0.chunk.js.map": "/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js.map",
-    "static/js/3.45871e5f.chunk.js": "/AdeoWeb-React/my-app/static/js/3.45871e5f.chunk.js",
-    "static/js/3.45871e5f.chunk.js.map": "/AdeoWeb-React/my-app/static/js/3.45871e5f.chunk.js.map",
-    "index.html": "/AdeoWeb-React/my-app/index.html",
-    "static/css/main.38b052a3.chunk.css.map": "/AdeoWeb-React/my-app/static/css/main.38b052a3.chunk.css.map",
-    "static/js/2.32aa11d0.chunk.js.LICENSE.txt": "/AdeoWeb-React/my-app/static/js/2.32aa11d0.chunk.js.LICENSE.txt",
-    "static/media/DEMOSITE.8363892b.svg": "/AdeoWeb-React/my-app/static/media/DEMOSITE.8363892b.svg",
-    "static/media/alexandra-gorn-unsplash.0f9eb904.jpg": "/AdeoWeb-React/my-app/static/media/alexandra-gorn-unsplash.0f9eb904.jpg",
-    "static/media/products.scss": "/AdeoWeb-React/my-app/static/media/vandan-patel-unsplash.575c78bc.jpg",
-    "static/media/snowflake.4f0765e0.svg": "/AdeoWeb-React/my-app/static/media/snowflake.4f0765e0.svg",
-    "static/media/sunglasses.3e12923e.svg": "/AdeoWeb-React/my-app/static/media/sunglasses.3e12923e.svg",
-    "static/media/umbrella.912f9ad4.svg": "/AdeoWeb-React/my-app/static/media/umbrella.912f9ad4.svg"
+    "main.css": "/my-app/static/css/main.b8724c88.chunk.css",
+    "main.js": "/my-app/static/js/main.42ed7bd9.chunk.js",
+    "main.js.map": "/my-app/static/js/main.42ed7bd9.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.7ae76413.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.7ae76413.js.map",
+    "static/js/2.32aa11d0.chunk.js": "/my-app/static/js/2.32aa11d0.chunk.js",
+    "static/js/2.32aa11d0.chunk.js.map": "/my-app/static/js/2.32aa11d0.chunk.js.map",
+    "static/js/3.45871e5f.chunk.js": "/my-app/static/js/3.45871e5f.chunk.js",
+    "static/js/3.45871e5f.chunk.js.map": "/my-app/static/js/3.45871e5f.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "static/css/main.b8724c88.chunk.css.map": "/my-app/static/css/main.b8724c88.chunk.css.map",
+    "static/js/2.32aa11d0.chunk.js.LICENSE.txt": "/my-app/static/js/2.32aa11d0.chunk.js.LICENSE.txt",
+    "static/media/DEMOSITE.8363892b.svg": "/my-app/static/media/DEMOSITE.8363892b.svg",
+    "static/media/alexandra-gorn-unsplash.0f9eb904.jpg": "/my-app/static/media/alexandra-gorn-unsplash.0f9eb904.jpg",
+    "static/media/products.scss": "/my-app/static/media/vandan-patel-unsplash.575c78bc.jpg",
+    "static/media/snowflake.4f0765e0.svg": "/my-app/static/media/snowflake.4f0765e0.svg",
+    "static/media/sunglasses.3e12923e.svg": "/my-app/static/media/sunglasses.3e12923e.svg",
+    "static/media/umbrella.912f9ad4.svg": "/my-app/static/media/umbrella.912f9ad4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bee13da1.js",
+    "static/js/runtime-main.7ae76413.js",
     "static/js/2.32aa11d0.chunk.js",
-    "static/css/main.38b052a3.chunk.css",
+    "static/css/main.b8724c88.chunk.css",
     "static/js/main.42ed7bd9.chunk.js"
   ]
 }
