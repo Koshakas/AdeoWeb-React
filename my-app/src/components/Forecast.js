@@ -2,7 +2,7 @@ import snowflake from "../assets/snowflake.svg";
 import umbrella from "../assets/umbrella.svg";
 import sunglasses from "../assets/sunglasses.svg";
 
-async function forecast() {
+async function forecastUrl() {
   // const clear = ["clear", "isolated-clouds", "scattered-clouds", "na"];
   const overcast = ["overcast", "light-rain", "moderate-rain", "heavy-rain", "fog"];
   const snow = ["sleet", "light-snow", "moderate-snow", "heavy-snow"];
@@ -16,4 +16,4 @@ async function forecast() {
   else return sunglasses;
 }
 
-export default forecast;
+export default forecastUrl;

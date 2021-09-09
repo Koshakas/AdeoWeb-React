@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/products.scss";
-import forecast from "./Forecast";
+import forecastUrl from "./Forecast";
 
 function Products() {
   const [weather, setWeather] = React.useState();
   React.useEffect(() => {
-    forecast().then(setWeather);
+    forecastUrl().then(setWeather);
   }, []);
 
   // forecast().then(w => setWeather(w));

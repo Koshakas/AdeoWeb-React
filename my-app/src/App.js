@@ -1,7 +1,5 @@
 import "./css/content-page.scss";
 import React from "react";
-// import ReactDOM from "react-dom";
-// import { Switch, Route } from "react-router-dom";
 
 // My components
 import Header from "./components/Header";
@@ -9,7 +7,6 @@ import Welcome from "./components/Welcome";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 //Pages
 import About from "./components/About";
 import ContactPage from "./components/ContactPage";

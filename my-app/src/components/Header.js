@@ -33,7 +33,7 @@ function Header(props) {
                   className="nav-btn"
                   onClick={() => {
                     props.onPageChange("home");
-                    setOpen(!open);
+                    open && setOpen(!open);
                   }}
                 >
                   Home
@@ -44,7 +44,7 @@ function Header(props) {
                   className="nav-btn"
                   onClick={() => {
                     props.onPageChange("service");
-                    setOpen(!open);
+                    open && setOpen(!open);
                   }}
                 >
                   Service
@@ -55,7 +55,7 @@ function Header(props) {
                   className="nav-btn dropbtn"
                   onClick={() => {
                     props.onPageChange("works");
-                    setOpen(!open);
+                    open && setOpen(!open);
                   }}
                 >
                   Works
@@ -73,7 +73,7 @@ function Header(props) {
                   className="nav-btn"
                   onClick={() => {
                     props.onPageChange("about-me");
-                    setOpen(!open);
+                    open && setOpen(!open);
                   }}
                 >
                   About me
@@ -84,7 +84,7 @@ function Header(props) {
                   className="nav-btn"
                   onClick={() => {
                     props.onPageChange("contact-me");
-                    setOpen(!open);
+                    open && setOpen(!open);
                   }}
                 >
                   Contact
