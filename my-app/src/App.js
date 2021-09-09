@@ -30,7 +30,6 @@ function App() {
   return (
     <>
       <Header onPageChange={setPage} />
-      {/* <pre>{JSON.stringify(pageHistory, undefined, "  ")}</pre> */}
       {page === "home" && (
         <>
           <Welcome />

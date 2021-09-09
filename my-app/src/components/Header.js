@@ -18,21 +18,46 @@ function Header(props) {
             <span></span>
           </div>
           {}
-          <img src={logo} alt="DemoSite Logo"></img>
+          <img
+            src={logo}
+            alt="DemoSite Logo"
+            onClick={() => {
+              props.onPageChange("home");
+              open && setOpen(!open);
+            }}
+          ></img>
           <nav id="header-nav">
-            <ul>
+            <ul className={open ? "open" : ""}>
               <li>
-                <button className="nav-btn" onClick={() => props.onPageChange("home")}>
+                <button
+                  className="nav-btn"
+                  onClick={() => {
+                    props.onPageChange("home");
+                    setOpen(!open);
+                  }}
+                >
                   Home
                 </button>
               </li>
               <li>
-                <button className="nav-btn" onClick={() => props.onPageChange("service")}>
+                <button
+                  className="nav-btn"
+                  onClick={() => {
+                    props.onPageChange("service");
+                    setOpen(!open);
+                  }}
+                >
                   Service
                 </button>
               </li>
               <li className="dropdown">
-                <button className="nav-btn dropbtn" onClick={() => props.onPageChange("works")}>
+                <button
+                  className="nav-btn dropbtn"
+                  onClick={() => {
+                    props.onPageChange("works");
+                    setOpen(!open);
+                  }}
+                >
                   Works
                 </button>
                 <div className="dropdown-content arrow-top">
@@ -44,12 +69,24 @@ function Header(props) {
                 </div>
               </li>
               <li>
-                <button className="nav-btn" onClick={() => props.onPageChange("about-me")}>
+                <button
+                  className="nav-btn"
+                  onClick={() => {
+                    props.onPageChange("about-me");
+                    setOpen(!open);
+                  }}
+                >
                   About me
                 </button>
               </li>
               <li>
-                <button className="nav-btn" onClick={() => props.onPageChange("contact-me")}>
+                <button
+                  className="nav-btn"
+                  onClick={() => {
+                    props.onPageChange("contact-me");
+                    setOpen(!open);
+                  }}
+                >
                   Contact
                 </button>
               </li>

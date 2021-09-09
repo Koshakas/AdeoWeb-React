@@ -22,6 +22,10 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
+
+      img {
+        cursor: pointer;
+      }
     }
 
     #header-nav {
@@ -98,22 +102,31 @@ header .container #header-nav .dropdown-content .subnav-btn {
 
 @media only screen and (max-width: 690px) {
   header .container {
-    height: unset;
+    height: auto;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
 
     #menu-list {
       display: none;
     }
 
     #header-nav {
-      margin: 20px 0;
+      // margin: 20px 0;
       display: block;
       width: 100%;
       text-align: center;
 
       ul {
-        padding: 10px;
+        padding: 0 10px;
+        height: 0px;
+        display: none;
+
+        &.open {
+          height: 286px;
+          display: block;
+        }
       }
 
       li {
@@ -141,6 +154,7 @@ header .container #header-nav .dropdown-content .subnav-btn {
         width: 240px;
         padding-top: 11px;
         margin-left: 15px;
+        margin-bottom: 40px;
       }
     }
   }
