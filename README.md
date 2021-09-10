@@ -2,8 +2,7 @@
 # AdeoWeb testinė užduotis
 
 Projektą galima pasiekti adresu:
-https://koshakas.github.io/AdeoWeb-React/index.html
-
+https://koshakas.github.io/AdeoWeb-React/
 
 
 
@@ -11,12 +10,12 @@ https://koshakas.github.io/AdeoWeb-React/index.html
 
 #### Technologijos
 
-Puslapis sukurtas panaudojant 'create-react-app', 'node-sass' ir 'gh-pages'.
+Puslapis sukurtas panaudojant 'create-react-app', papidlomai diegiau 'node-sass' ir 'gh-pages'.
 
 #### Dizainas
 
 Stengiausi laikytis duotų dizainų.
-Teko sugalvoti button:hover ir mobilios versijos dropdown menu dizainą pačiam, tikiuosi neprašoviau smarkiai. Dropdown menu nenaudoja jokių animacijų.
+Teko sugalvoti button:hover ir mobilios versijos dropdown menu dizainą pačiam. Dropdown meniu nenaudoja jokių animacijų.
 Nepanaudojau 'mobile-first approach', kadangi pasiskaičiau apie tai kai jau buvau surašęs didžiąją dalį css :) Dėl to gailiuosi, kitą kartą būtinai panaudosiu.
 
 #### Komitai
@@ -30,3 +29,4 @@ Kadangi navigacija padaryta per useState (dėl reikalavimų navigacijos istorija
 #### Dėl Redux
 
 Projekte nenaudojau Redux, kadangi dar pakankamai neišstudijavau technologijos. Puslapio navigaciją padariau su useState.
+
